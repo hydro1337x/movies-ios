@@ -11,6 +11,6 @@ public struct InvalidHTTPResponseError: Error {
     public init() {}
 }
 
-public protocol HTTPClient {
+public protocol HTTPClient: Sendable {
     func perform(request: URLRequest) async throws -> (Data, HTTPURLResponse)
 }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Networking
 
 extension URLSession: HTTPClient {
     public func perform(request: URLRequest) async throws -> (Data, HTTPURLResponse) {
